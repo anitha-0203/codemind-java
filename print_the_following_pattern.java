@@ -1,17 +1,19 @@
 import java.util.Scanner;
-class LoopDemo
+class Pattern
 {
-   public static void main(String args[])
-   {
-        Scanner cs=new Scanner(System.in);
-        int row_size,out,in;
-        row_size=cs.nextInt();
-        for(out=row_size;out>=1;out--)
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print("");
+        for(int i=1;i<=n;i++)
         {
-             for(in=row_size;in>=1;in--)
-             System.out.print(in+" ");
-             System.out.println();
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j+"");
+            }
+            System.out.println();
         }
-        cs.close();
-   }
-} 
+        sc.close();
+    }
+}
