@@ -3,16 +3,15 @@ class LoopDemo
 {
    public static void main(String args[])
    {
-        Scanner sc=new Scanner(System.in);
-        int rows=sc.nextInt();
-        for(int i=rows;i>=1;i--)
+        Scanner cs=new Scanner(System.in);
+        int row_size,out,in;
+        row_size=cs.nextInt();
+        for(out=row_size;out>=1;out--)
         {
-             for(int j=1;j<=i;j++)
-             {
-                  System.out.print(j+ "");
-             }
+             for(in=row_size;in>=1;in--)
+             System.out.print(in+" ");
              System.out.println();
         }
-        sc.close();
+        cs.close();
    }
 } 
