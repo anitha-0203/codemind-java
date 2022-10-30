@@ -8,12 +8,12 @@ class Sample
         while(x>0)
         {
             sum=sum+x%10;
-            x=x/10;
+             x=x/10;
         }
         if(sum==temp)
-         return"Neon Number";
+          return"Neon Number";
         else
-         return"Not Neon Number";
+          return"Not Neon Number";
     }
     public static void main(String args[])
     {
